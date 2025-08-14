@@ -1,1 +1,0 @@
-const fs=require('fs');const pdf=require('pdf-parse');const p='/workspace/CMS.pdf';pdf(fs.readFileSync(p)).then(d=>{console.log(d.text)}).catch(e=>{console.error(e);process.exit(1)});
